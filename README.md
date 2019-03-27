@@ -1,5 +1,5 @@
 # v8-toucans-team-11
-Add-project-description-here | Voyage-8 | https://chingu.io/
+Huddle landing page with alternating sections | Voyage-8 | https://chingu.io/
 
 # Team Member 🤙
 - [Eri Hariono](https://github.com/hanacaraka)
