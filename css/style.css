@@ -31,7 +31,8 @@ img {
       -ms-flex-align: center;
           align-items: center;
   margin: 8rem auto;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .main-heading {
   font-family: var(--heading-font, sans-serif);
@@ -47,7 +48,8 @@ img {
   font-size: 1.2rem;
   line-height: 1.5;
   color: var(--body-color);
-  flex-basis: content;
+  -ms-flex-preferred-size: content;
+      flex-basis: content;
 }
 .button-anchor {
   text-decoration: none;
@@ -67,7 +69,8 @@ img {
   font-size: 1.1rem;
   margin-left: 3rem;
   min-width: 0;
-  flex-basis: auto;
+  -ms-flex-preferred-size: auto;
+      flex-basis: auto;
 }
 /* ............. mockup screen section, just below the landing section....... */
 .screen-mockup {
@@ -82,14 +85,20 @@ img {
 }
 #mockups {
   min-width: 0;
-  flex-basis: 65vw;
+  -ms-flex-preferred-size: 65vw;
+      flex-basis: 65vw;
   padding: 0 auto;
 }
 /* Statistics section */
 .statistics-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   min-height: 55vh;
   width: 94vw;
 }
@@ -118,4 +127,63 @@ img {
 }
 .statistics__faded--center {
   margin-left: 2.5rem;
+}
+/* Media Queries */
+@media (max-width: 882px) {
+  #mockups {
+    -ms-flex-preferred-size: 78vw;
+        flex-basis: 78vw;
+  }
+  .main-heading {
+    min-width: 0;
+    -ms-flex-preferred-size: 60%;
+        flex-basis: 60%;
+    width: 80%;
+  }
+}
+@media (max-width: 600px) {
+  .introduction-container p  {
+    padding-left: 4rem;
+    padding-right: 4rem;
+    text-align: justify;
+  }
+  .introduction-container p br {
+    display: none;
+  }
+  .button-anchor {
+    margin-right: 1rem;
+    margin-left: auto;
+  }
+  .main-button {
+    margin-right: auto;
+  }
+}
+@media (max-width: 550px) {
+  .statistics-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+  }
+  .statistics__img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .statistics {
+    margin: 10rem auto auto auto;
+  }
+  .statistics__compartment:first-child {
+    margin-bottom: 5rem;
+  }
+}
+@media (max-width: 520px) {
+  .main-button {
+    padding: 1.25rem 4rem;
+  }
+}
+@media (max-width: 400px) {
+  .main-button {
+    padding: 1rem 2rem;
+  }
 }
