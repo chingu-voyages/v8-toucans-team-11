@@ -1,0 +1,121 @@
+/* Creating some variables */
+:root {
+  --heading-font: 'Poppins';
+  --pink: hsl(322,100%,66%);
+  --heading-color: hsl(207,100%,8%);
+  --body-color: hsl(192, 100%, 9%);
+}
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.introduction-container {
+  text-align: center;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 8rem auto;
+  flex-wrap: wrap;
+}
+.main-heading {
+  font-family: var(--heading-font, sans-serif);
+  text-transform: capitalize;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: var(--heading-color);
+  line-height: normal;
+  padding: 0;
+  margin-bottom: 0.1rem;
+}
+.introduction-container p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--body-color);
+  flex-basis: content;
+}
+.button-anchor {
+  text-decoration: none;
+  border: 1px solid hsl(322,100%,66%);
+  border-radius: 20px;
+  color: hsl(322,100%,66%);
+  padding: 0.5rem 1.5rem;
+  margin-right: 4rem;
+}
+.main-button {
+  background-color: var(--pink);
+  color: #fff;
+  font-weight: 700;
+  padding: 1.25rem 6rem;
+  border-radius: 30px;
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  margin-left: 3rem;
+  min-width: 0;
+  flex-basis: auto;
+}
+/* ............. mockup screen section, just below the landing section....... */
+.screen-mockup {
+  /* min-height: 85vh; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+#mockups {
+  min-width: 0;
+  flex-basis: 65vw;
+  padding: 0 auto;
+}
+/* Statistics section */
+.statistics-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 55vh;
+  width: 94vw;
+}
+/* need to reduce size of image */
+.statistics__img {
+  max-width: 15%;
+}
+.statistics__img:first-child {
+  max-width: 20%;
+}
+/* now to work on the styles of things inside container */
+.statistics__claim {
+  color: var(--heading-color);
+  font-family: var(--heading-font);
+  font-size: 5rem;
+  font-weight: 700;
+  line-height: 0;
+  margin-top: 4rem;
+  margin-bottom: 3.5rem;
+}
+.statistics__faded {
+  color: var(--body-color);
+  font-size: 1.1rem;
+  opacity: .6;
+
+}
+.statistics__faded--center {
+  margin-left: 2.5rem;
+}
