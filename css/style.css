@@ -297,7 +297,7 @@ img {
     font-size: 1rem;
   }
 
-  .flowing__container .additional__img { 
+  .flowing__container .additional__img {
     order: 0
   }
 }
@@ -315,11 +315,11 @@ img {
   .additional__paragraph {
     width: 400px;
   }
-  
+
   .additional__paragraph h1 {
     font-size: 1.8rem;
   }
-  
+
   .additional__paragraph p {
     font-size: 1.2rem;
   }
@@ -411,4 +411,22 @@ footer .fab {
   footer > .flex-container {
       flex-direction: column-reverse;
   }
+}
+
+/* Back to top button */
+#backToTop {
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 90;
+  border: none;
+  outline: none;
+  background-color: #ffd05a;
+  border-radius: 4px;
+  padding: 1rem;
+  cursor: pointer;
+}
+.back-to-top__image {
+  width: 2rem;
 }
