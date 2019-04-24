@@ -76,6 +76,9 @@ img {
   color: hsl(322,100%,66%);
   padding: 0.5rem 1.5rem;
   margin-right: 4rem;
+  transition:
+  background-color 0.3s ease-in-out,
+  color 0.3s ease-in-out;
 }
 .main-button {
   background-color: var(--pink);
@@ -463,4 +466,15 @@ footer .fab {
 }
 .back-to-top__image {
   width: 2rem;
+}
+/* Hover for buttons */
+a.button-anchor:hover {
+  background-color: var(--pink);
+  color: #fff;
+}
+a.button-anchor.main-button:hover {
+  background-color: #fe66c6;
+}
+.additional__btn button:hover {
+  background-color: #fe66c6;
 }
