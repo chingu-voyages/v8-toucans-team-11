@@ -475,6 +475,6 @@ a.button-anchor:hover {
 a.button-anchor.main-button:hover {
   background-color: #fe66c6;
 }
-.additional__btn button:hover {
+.additional__btn button:hover, #nl-flex button:hover {
   background-color: #fe66c6;
 }
