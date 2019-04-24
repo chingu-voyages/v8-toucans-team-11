@@ -12,3 +12,11 @@ button.addEventListener('click', (e) => {
   document.body.scrollTop = 0
   document.documentElement.scrollTop = 0
 })
+
+// typing animation
+var options = {
+  strings: ["build the community your fans will love"],
+  typeSpeed: 30
+}
+
+var typed = new Typed(".main-heading", options);
