@@ -254,7 +254,7 @@ img {
 .additional__btn button{
   padding: 0.8rem 2.5rem;
   border: none;
-  border-radius: 20px;
+  border-radius: 30px;
   background-color: hsl(322, 100%, 66%);
   box-shadow: 0 2px 10px 0px #969696;
   cursor: pointer;
@@ -299,6 +299,15 @@ img {
 
   .flowing__container .additional__img { 
     order: 0
+  }
+
+  .additional__btn button {
+    width: 300px;
+    height: 60px;
+  }
+
+  .additional__btn a {
+    font-size: 1.2rem;
   }
 }
 
