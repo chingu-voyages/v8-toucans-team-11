@@ -4,6 +4,7 @@
   --pink: hsl(322,100%,66%);
   --heading-color: hsl(207,100%,8%);
   --body-color: hsl(192, 100%, 9%);
+  scroll-behavior: smooth;
 }
 body {
   margin: 0;
@@ -219,6 +220,9 @@ img {
   #headline .button-anchor {
     font-size: 0.9rem;
     margin-right: 0.5rem;
+  }
+  .headline-img {
+    margin-left: 0.6rem;
   }
 }
 

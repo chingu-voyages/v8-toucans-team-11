@@ -11,4 +11,7 @@ window.addEventListener('scroll', scrollFunction)
 button.addEventListener('click', (e) => {
   document.body.scrollTop = 0
   document.documentElement.scrollTop = 0
+  // document.querySelector('#headline').scrollIntoView({
+  //   behavior: 'smooth'
+  // })
 })
