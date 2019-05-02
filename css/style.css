@@ -205,6 +205,9 @@ img {
   .headline-img {
     max-width: 50%;
   }
+  #mockups {
+    height: 450px;
+  }
 }
 @media (max-width: 520px) {
   .main-button {
@@ -226,6 +229,9 @@ img {
   }
   .headline-img {
     margin-left: 0.6rem;
+  }
+  #mockups {
+    height: 250px;
   }
 }
 
