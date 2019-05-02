@@ -1,5 +1,5 @@
-# v8-toucans-team-11
-Huddle landing page with alternating sections | Voyage-8 | https://chingu.io/
+# Toucans Team 11 🐦
+Huddle landing page with alternating sections. Check this out! 🔥 https://chingu-huddle.netlify.com/
 
 # Team Member 🤙
 - [Eri Hariono](https://github.com/hanacaraka)
